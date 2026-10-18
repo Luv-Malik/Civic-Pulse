@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CivicPulse 🌍
 
 CivicPulse is a civic-issue reporting and incident-triage MVP. Citizens can report potholes, water leaks, waste, broken streetlights and other public issues. The backend groups likely duplicate reports using geographic distance and text similarity, calculates an explainable priority score, and exposes a dashboard/map for triage.
@@ -128,3 +129,7 @@ git push -u origin main
 - Add moderation/rate limiting, audit logs and notification integrations.
 - Add a proper test dataset and measure duplicate-detection precision/recall.
 - Integrate official municipal workflows only with permission.
+=======
+# Civic-Pulse
+Combines similar reports about water leakage, blocked drains, streetlights or damaged roads into a shared incident map. Detect clusters and estimate which issues deserve attention first.
+>>>>>>> 86f8031752e8bc1a521c05c28db2859a7489e96c
