@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/civicpulse}
+    username: ${DB_USERNAME:civicpulse}
+    password: ${DB_PASSWORD:civicpulse_dev_password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+app:
+  seed: ${CIVICPULSE_SEED:true}
+  cors-origins: ${CORS_ORIGINS:http://localhost:5173}
+logging:
+  level:
+    in.civicpulse: INFO
